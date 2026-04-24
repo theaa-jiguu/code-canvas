@@ -60,7 +60,7 @@ export const Projects = () => (
             href={p.href}
             className="group grid grid-cols-12 items-baseline gap-4 py-6 transition-colors hover:bg-card/40 -mx-4 px-4 rounded-md"
           >
-            <span className="col-span-2 font-mono text-xs text-muted-foreground">
+            <span className="col-span-12 sm:col-span-2 font-mono text-xs text-muted-foreground">
               {p.year}
             </span>
             <div className="col-span-12 sm:col-span-7 space-y-1.5">
