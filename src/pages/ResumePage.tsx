@@ -46,17 +46,18 @@ const education = [
 const ResumePage = () => (
   <div className="min-h-screen bg-background font-sans">
     <SiteNav />
-    <main className="container max-w-3xl pt-12 pb-20">
-      <div className="flex items-end justify-between border-b border-border/60 pb-6 mb-10">
+    <main className="container max-w-3xl pt-10 sm:pt-12 pb-16 sm:pb-20">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 border-b border-border/60 pb-6 mb-10">
         <div>
           <p className="font-mono text-xs text-muted-foreground mb-2">/ resume</p>
-          <h1 className="text-3xl font-medium tracking-tight">Alex Chen</h1>
-          <p className="font-mono text-sm text-muted-foreground mt-1">
+          <h1 className="text-2xl sm:text-3xl font-medium tracking-tight">Alex Chen</h1>
+          <p className="font-mono text-xs sm:text-sm text-muted-foreground mt-1 break-all sm:break-normal">
             backend developer · berlin · alex@chen.dev
           </p>
         </div>
         <a
-          href="#"
+          href="/alex-chen-resume.pdf"
+          download
           className="group inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 font-mono text-xs hover:border-accent/40 hover:text-accent transition-colors"
         >
           <Download className="h-3.5 w-3.5" /> pdf
